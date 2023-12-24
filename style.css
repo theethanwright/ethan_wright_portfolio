@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Nohemi";
+    src: url(public/fonts/Nohemi-Medium.woff2);
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: 1.82px;
+}
+
+  body {
+    display: block;
+    overflow: hidden;
+    background: #101010;
+  }
+
+.container {
+    padding: 16px 30px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(12, 6.771vw);
+    gap: 1.389vw;
+}
+
+.word {
+    position: absolute;
+    transform-origin: 50% 50%;
+    cursor: grab;
+    user-select: none;
+    font-family: "Nohemi";
+    color: #fff;
+    font-size: 7.176vw;
+    margin-right: 10px;
+    line-height: auto;
+  }
+
+.logo {
+    grid-column-start: 1;
+    display: flex;
+    width: 34px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 3.256px;
+    justify-self: start;
+    align-self: center;
+  }
+
+  p:nth-child(2) {
+    grid-column-start: 2;
+    justify-self: start;
+    align-self: center;
+  }
+
+  p:nth-child(3) {
+    grid-column-start: 5;
+    justify-self: start;
+    align-self: center;
+  }
+
+  p:nth-child(4) {
+    grid-column-start: 8;
+    justify-self: start;
+    align-self: center;
+  }
+
+  p:nth-child(5) {
+    grid-column-start: 11;
+    justify-self: start;
+    align-self: center;
+  }
+
+  .intro {
+    position: absolute;
+    top: 77.798vh;
+    left: 9.838vw;
+    width: 320px;
+  }
+
+  .fun-fact {
+    position: absolute;
+    top: 77.798vh;
+    left: 73.669vw;
+    width: 143px;
+    height: 42px;
+  }
+
+  .image {
+    width: 200px;
+    height: 112px;
+    position: absolute;
+    width: 332px;
+    height: 187px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+  }
