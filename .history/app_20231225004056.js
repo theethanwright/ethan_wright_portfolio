@@ -99,16 +99,15 @@ imageElements.forEach((imageElem) => {
     const randomLeft = Math.floor(Math.random() * window.innerWidth);
     const randomTop = Math.floor(Math.random() * window.innerHeight);
     const randomTime = Math.floor(Math.random() * 2500) + 2000;
-    const randomVelocityX = Math.floor(Math.random() * 2) + -2;
-    const randomVelocityY = Math.floor(Math.random() * 2) + 1;
+    const randomVelocity = Math.floor(Math.random() * -0.02) + (0.01);
     var startTime = 0,
      scaleRate = 0;
      const scalingDuration = 200;
     const iBody = Bodies.rectangle(
         randomLeft,
         randomTop,
-        0.17,
-        0.09,
+        0.88,
+        0.4,
       {
         render: { fillStyle: "transparent" }
       }
@@ -126,13 +125,13 @@ imageElements.forEach((imageElem) => {
   
       if (scaleRate > 0) {
         Body.scale(iBody, 1 + (scaleRate * timeScale), 1 + (scaleRate * timeScale));
-        Body.setVelocity(iBody, { x: randomVelocityX, y: randomVelocityY })
+        Body.setVelocity(iBody, { x: 0, y: -10 })
       }
   
       if (engine.timing.timestamp - startTime >= randomTime && 
           width <= 200) {
         // start scaling
-        scaleRate = 10;
+        scaleRate = 5;
   
         // update last time
         startTime = randomTime + scalingDuration;

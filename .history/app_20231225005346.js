@@ -107,8 +107,8 @@ imageElements.forEach((imageElem) => {
     const iBody = Bodies.rectangle(
         randomLeft,
         randomTop,
-        0.17,
-        0.09,
+        0.88,
+        0.4,
       {
         render: { fillStyle: "transparent" }
       }
