@@ -98,46 +98,38 @@ const imageElements = document.querySelectorAll(".image");
 imageElements.forEach((imageElem) => {
     const randomLeft = Math.floor(Math.random() * window.innerWidth);
     const randomTop = Math.floor(Math.random() * window.innerHeight);
-    const randomTime = Math.floor(Math.random() * 2500) + 2000;
-    const randomVelocity = Math.floor(Math.random() * -0.02) + (0.01);
-    var startTime = 0,
-     scaleRate = 0;
-     const scalingDuration = 200;
+    const randomTime = Math.floor(Math.random() * 2000) + 500;
     const iBody = Bodies.rectangle(
         randomLeft,
         randomTop,
-        0.88,
-        0.4,
+        9,
+        5,
       {
         render: { fillStyle: "transparent" }
       }
      );
 
-     function distance(x1, y1, x2, y2){
-      var x = Math.abs(x1-x2)
-      var y = Math.abs(y1-y2)
-      return Math.sqrt((x*x)+(y*y))
-    }
+     var startTime = 0,
+     scaleRate = 0;
+     const scalingDuration = 1000;
+
 
      Events.on(engine, 'beforeUpdate', function (event) {
-      const width = distance(iBody.vertices[0].x, iBody.vertices[0].y, iBody.vertices[1].x, iBody.vertices[1].y)
       var timeScale = (event.delta || (1000 / 60)) / 1000;
   
       if (scaleRate > 0) {
         Body.scale(iBody, 1 + (scaleRate * timeScale), 1 + (scaleRate * timeScale));
-        //Body.setVelocity(iBody, 1)
       }
   
-      if (engine.timing.timestamp - startTime >= randomTime && 
-          width <= 200) {
+      if (engine.timing.timestamp - startTime >= randomTime && engine.timing.timestamp - startTime <= randomTime + scalingDuration) {
         // start scaling
-        scaleRate = 5;
+        scaleRate = 3.5;
   
         // update last time
-        startTime = randomTime + scalingDuration;
+        startTime = engine.timing.timestamp;
       }
   
-      if (width >= 200) {
+      if (engine.timing.timestamp - startTime >= randomTime + scalingDuration) {
         // stop scaling
         scaleRate = 0;
   
@@ -220,18 +212,12 @@ imageElements.forEach((imageElem) => {
     elem.style.transform = `rotate(${body.angle}rad)`;
 });
 
-  function distance(x1, y1, x2, y2){
-    var x = Math.abs(x1-x2)
-    var y = Math.abs(y1-y2)
-    return Math.sqrt((x*x)+(y*y))
-  }
-
 imageBodies.forEach(({ iBody, imageElem }) => {
     const { x, y } = iBody.position
-    const width = distance(iBody.vertices[0].x, iBody.vertices[0].y, iBody.vertices[1].x, iBody.vertices[1].y)
     imageElem.style.top = `${y - imageElem.offsetHeight / 2}px`;
     imageElem.style.left = `${x - imageElem.offsetWidth / 2}px`;
-    imageElem.style.width = `${width}px`;
+    imageElem.style.width = `${iBody.bounds.max.x - iBody.bounds.min.x}px`;
+    imageElem.style.height = `${iBody.bounds.max.y - iBody.bounds.min.y}px`;
     imageElem.style.transform = `rotate(${iBody.angle}rad)`;
   });
 

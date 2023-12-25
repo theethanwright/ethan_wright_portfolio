@@ -55,7 +55,7 @@ const renderCanvas = () => {
     options: {
       ...canvasSize,
       background: "transparent",
-      wireframes: false,
+      wireframes: true,
     }
   });
 
@@ -98,16 +98,15 @@ const imageElements = document.querySelectorAll(".image");
 imageElements.forEach((imageElem) => {
     const randomLeft = Math.floor(Math.random() * window.innerWidth);
     const randomTop = Math.floor(Math.random() * window.innerHeight);
-    const randomTime = Math.floor(Math.random() * 2500) + 2000;
-    const randomVelocity = Math.floor(Math.random() * -0.02) + (0.01);
+    const randomTime = Math.floor(Math.random() * 2000) + 1000;
     var startTime = 0,
      scaleRate = 0;
      const scalingDuration = 200;
     const iBody = Bodies.rectangle(
         randomLeft,
         randomTop,
-        0.88,
-        0.4,
+        9,
+        5,
       {
         render: { fillStyle: "transparent" }
       }
@@ -125,13 +124,12 @@ imageElements.forEach((imageElem) => {
   
       if (scaleRate > 0) {
         Body.scale(iBody, 1 + (scaleRate * timeScale), 1 + (scaleRate * timeScale));
-        //Body.setVelocity(iBody, 1)
       }
   
       if (engine.timing.timestamp - startTime >= randomTime && 
           width <= 200) {
         // start scaling
-        scaleRate = 5;
+        scaleRate = 1;
   
         // update last time
         startTime = randomTime + scalingDuration;

@@ -22,7 +22,7 @@ p {
   }
 
 .container {
-    position: absolute;
+  position: absolute;
     padding: 16px 30px;
     display: grid;
     margin: 0;

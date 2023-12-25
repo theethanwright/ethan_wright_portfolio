@@ -125,7 +125,7 @@ imageElements.forEach((imageElem) => {
   
       if (scaleRate > 0) {
         Body.scale(iBody, 1 + (scaleRate * timeScale), 1 + (scaleRate * timeScale));
-        //Body.setVelocity(iBody, 1)
+        Body.setAngularVelocity(iBody, randomVelocity)
       }
   
       if (engine.timing.timestamp - startTime >= randomTime && 

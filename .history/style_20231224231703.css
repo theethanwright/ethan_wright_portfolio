@@ -22,7 +22,6 @@ p {
   }
 
 .container {
-    position: absolute;
     padding: 16px 30px;
     display: grid;
     margin: 0;
@@ -82,7 +81,7 @@ p {
     position: absolute;
     top: 77.798vh;
     left: 9.838vw;
-    width: 328px;
+    width: 321px;
   }
 
   .fun-fact {

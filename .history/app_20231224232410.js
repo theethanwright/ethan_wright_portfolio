@@ -99,7 +99,6 @@ imageElements.forEach((imageElem) => {
     const randomLeft = Math.floor(Math.random() * window.innerWidth);
     const randomTop = Math.floor(Math.random() * window.innerHeight);
     const randomTime = Math.floor(Math.random() * 2500) + 2000;
-    const randomVelocity = Math.floor(Math.random() * -0.02) + (0.01);
     var startTime = 0,
      scaleRate = 0;
      const scalingDuration = 200;
@@ -113,6 +112,8 @@ imageElements.forEach((imageElem) => {
       }
      );
 
+     Body.setVelocity(iBody, [1,1])
+
      function distance(x1, y1, x2, y2){
       var x = Math.abs(x1-x2)
       var y = Math.abs(y1-y2)
@@ -125,7 +126,6 @@ imageElements.forEach((imageElem) => {
   
       if (scaleRate > 0) {
         Body.scale(iBody, 1 + (scaleRate * timeScale), 1 + (scaleRate * timeScale));
-        //Body.setVelocity(iBody, 1)
       }
   
       if (engine.timing.timestamp - startTime >= randomTime && 

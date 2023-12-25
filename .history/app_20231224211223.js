@@ -95,57 +95,38 @@ const renderCanvas = () => {
 const imageBodies = [];
 const imageElements = document.querySelectorAll(".image");
 
+var lastTime = 0,
+scaleRate = 3.5;
+
 imageElements.forEach((imageElem) => {
     const randomLeft = Math.floor(Math.random() * window.innerWidth);
     const randomTop = Math.floor(Math.random() * window.innerHeight);
-    const randomTime = Math.floor(Math.random() * 2500) + 2000;
-    const randomVelocity = Math.floor(Math.random() * -0.02) + (0.01);
-    var startTime = 0,
-     scaleRate = 0;
-     const scalingDuration = 200;
     const iBody = Bodies.rectangle(
         randomLeft,
         randomTop,
-        0.88,
-        0.4,
+        9,
+        5,
       {
         render: { fillStyle: "transparent" }
       }
      );
 
-     function distance(x1, y1, x2, y2){
-      var x = Math.abs(x1-x2)
-      var y = Math.abs(y1-y2)
-      return Math.sqrt((x*x)+(y*y))
-    }
+     Events.on(engine, 'beforeUpdate', function(event) {
+        var timeScale = (event.delta || (1000 / 60)) / 1000;
 
-     Events.on(engine, 'beforeUpdate', function (event) {
-      const width = distance(iBody.vertices[0].x, iBody.vertices[0].y, iBody.vertices[1].x, iBody.vertices[1].y)
-      var timeScale = (event.delta || (1000 / 60)) / 1000;
-  
-      if (scaleRate > 0) {
-        Body.scale(iBody, 1 + (scaleRate * timeScale), 1 + (scaleRate * timeScale));
-        //Body.setVelocity(iBody, 1)
-      }
-  
-      if (engine.timing.timestamp - startTime >= randomTime && 
-          width <= 200) {
-        // start scaling
-        scaleRate = 5;
-  
-        // update last time
-        startTime = randomTime + scalingDuration;
-      }
-  
-      if (width >= 200) {
-        // stop scaling
-        scaleRate = 0;
-  
-        // reset start time
-        startTime = 0;
-      }
+        if (scaleRate > 0) {
+            Body.scale(iBody, 1 + (scaleRate * timeScale), 1 + (scaleRate * timeScale));
+        }
+
+        if (engine.timing.timestamp - lastTime >= 1000) {
+
+            // stop scaling
+            scaleRate = 0;
+            
+            // update last time
+            lastTime = engine.timing.timestamp;
+        }
     });
-  
 
      imageBodies.push({ iBody, imageElem});
 
@@ -220,18 +201,13 @@ imageElements.forEach((imageElem) => {
     elem.style.transform = `rotate(${body.angle}rad)`;
 });
 
-  function distance(x1, y1, x2, y2){
-    var x = Math.abs(x1-x2)
-    var y = Math.abs(y1-y2)
-    return Math.sqrt((x*x)+(y*y))
-  }
-
 imageBodies.forEach(({ iBody, imageElem }) => {
-    const { x, y } = iBody.position
-    const width = distance(iBody.vertices[0].x, iBody.vertices[0].y, iBody.vertices[1].x, iBody.vertices[1].y)
+    const { x, y } = iBody.bounds
+    const { width, height, } = iBody.bounds;
     imageElem.style.top = `${y - imageElem.offsetHeight / 2}px`;
     imageElem.style.left = `${x - imageElem.offsetWidth / 2}px`;
     imageElem.style.width = `${width}px`;
+    imageElem.style.height = `${height}px`;
     imageElem.style.transform = `rotate(${iBody.angle}rad)`;
   });
 
