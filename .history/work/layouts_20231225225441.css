@@ -1,0 +1,158 @@
+@media screen and (min-width: 905px) {
+    body {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .navbar {
+        box-sizing: border-box;
+        position: absolute;
+        padding: 24px 30px;
+        display: grid;
+        margin: 0;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.389vw;
+    }
+    
+    .logo {
+        grid-column-start: 1;
+        display: flex;
+        width: 34px;
+        height: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 3.256px;
+        justify-self: start;
+        align-self: center;
+      }
+    
+      p:nth-child(2) {
+        grid-column: 2 / span 2;
+        justify-self: start;
+        align-self: center;
+      }
+    
+      p:nth-child(3) {
+        grid-column: 5 / span 2;
+        justify-self: start;
+        align-self: center;
+      }
+    
+      p:nth-child(4) {
+        grid-column: 8 / span 2;
+        justify-self: start;
+        align-self: center;
+      }
+    
+      p:nth-child(5) {
+        grid-column: 11 / span 2;
+        justify-self: start;
+        align-self: center;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .wrapper-project {
+        box-sizing: border-box;
+        display: grid;
+        margin: 0;
+        width: 100%;
+        padding: 88px 30px;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px 1.389vw;
+      }
+
+      .wrapper-project h1 {
+        grid-column: 1 / span 4;
+        justify-self: start;
+        align-self: end;
+      }
+ 
+      .wrapper-project .project-info {
+        grid-column: 8 / span 4;
+        justify-self: stretch;
+        align-self: end;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .wrapper-project a {
+        grid-column: 1 / span 12;
+        justify-self: start;
+        align-self: center;
+      }
+
+}
+
+@media screen and (max-width: 904px) {
+    .navbar {
+        position: absolute;
+        padding: 16px 30px;
+        display: grid;
+        margin: 0;
+        grid-template-columns: repeat(8, 8.833vw);
+        gap: 2.667vw;
+    }
+
+    .logo {
+        grid-column-start: 1;
+        display: flex;
+        width: 34px;
+        height: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 3.256px;
+        justify-self: start;
+        align-self: center;
+      }
+
+    .navbar p {
+        display: none;
+    }
+
+    .icon {
+        display: grid;
+        grid-column-start: 8;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        position: absolute;
+        padding: 16px 16px;
+        display: grid;
+        margin: 0;
+        grid-template-columns: repeat(4, 19.444vw);
+        gap: 4.444vw;
+    }
+
+    .logo {
+        grid-column-start: 1;
+        display: flex;
+        width: 34px;
+        height: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 3.256px;
+        justify-self: start;
+        align-self: center;
+      }
+
+    .navbar p {
+        display: none;
+    }
+
+    .icon {
+        display: grid;
+        grid-column-start: 4;
+        justify-self: end;
+        align-self: center;
+    }
+}

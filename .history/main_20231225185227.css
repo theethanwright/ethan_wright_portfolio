@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Nohemi";
+    src: url(public/fonts/Nohemi-Medium.woff2);
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: 1.82px;
+}
+
+  body {
+    display: block;
+    overflow: hidden;
+    background: #101010;
+  }
+
+
+.word {
+    position: absolute;
+    transform-origin: 50% 50%;
+    cursor: grab;
+    user-select: none;
+    font-family: "Nohemi";
+    color: #fff;
+    font-size: 7.176vw;
+    margin-right: 10px;
+    line-height: auto;
+  }
