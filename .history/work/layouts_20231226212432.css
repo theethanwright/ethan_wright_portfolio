@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 905px) {
 
     .navbar {
         box-sizing: border-box;
@@ -65,8 +65,6 @@
         grid-column: 1 / span 4;
         justify-self: start;
         align-self: end;
-
-        font-size: clamp(64px, 8vw, 124px)
       }
  
       .wrapper-project .project-info {
@@ -80,10 +78,6 @@
         transition-delay: 75ms
       }
 
-      .wrapper-project .project-info p {
-        font-size: clamp(9px, 0.81vw, 14px);
-      }
-
       .wrapper-project a {
         grid-column: 1 / 13;
         justify-self: stretch;
@@ -94,7 +88,7 @@
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 904px) {
     .navbar {
       box-sizing: border-box;
       position: relative;
@@ -143,8 +137,6 @@
       grid-column: 1 / span 6;
       justify-self: start;
       align-self: end;
-
-      font-size: clamp(64px, 12vw, 124px)
     }
 
     .wrapper-project .project-info {
@@ -156,13 +148,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
-      gap: 2vw;
-
       transition-delay: 75ms
-    }
-
-    .wrapper-project .project-info p {
-      font-size: clamp(9px, 1.9vw, 14px);
     }
 
     .wrapper-project a {
@@ -174,7 +160,7 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
     .navbar {
       box-sizing: border-box;
       position: relative;
@@ -207,48 +193,5 @@
         grid-column-start: 4;
         justify-self: end;
         align-self: center;
-    }
-
-    .wrapper-project {
-      box-sizing: border-box;
-      display: grid;
-      margin: 0;
-      width: 100%;
-      padding: 68px 30px;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 32px 1.389vw;
-    }
-
-    .wrapper-project h1 {
-      grid-column: 1 / span 6;
-      justify-self: start;
-      align-self: end;
-
-      font-size: clamp(64px, 14vw, 124px)
-    }
-
-    .wrapper-project .project-info {
-      grid-column: 1 / span 5;
-      justify-self: stretch;
-      align-self: end;
-
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      justify-content: start;
-      align-items: flex-start;
-      transition-delay: 75ms
-    }
-
-    .wrapper-project .project-info p {
-      font-size: clamp(9px, 3vw, 14px);
-    }
-
-    .wrapper-project a {
-      grid-column: 1 / 9;
-      justify-self: stretch;
-      align-self: start;
-      overflow: hidden;
-      transition-delay: 150ms
     }
 }

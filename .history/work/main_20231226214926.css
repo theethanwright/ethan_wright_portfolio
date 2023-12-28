@@ -44,12 +44,13 @@ p {
   a {
     text-decoration: none;
     border-radius: 20px;
+    height: 66.293vh;
   }
 
   img {
     box-sizing: border-box;
     width: 100%;
-    height: 66.293vh;
+    height: 100%;
     object-fit: cover;
     transition: all 1s;
   }

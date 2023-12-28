@@ -11,7 +11,7 @@ h1 {
   box-sizing: border-box;
   color: #FFF;
   font-family: "Nohemi";
-  font-size: 124px;
+  font-size: clamp(64px, 8vw, 124px);
   font-style: normal;
   font-weight: 500;
   line-height: 65%; /* 186px */

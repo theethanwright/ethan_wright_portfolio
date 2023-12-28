@@ -11,7 +11,7 @@ h1 {
   box-sizing: border-box;
   color: #FFF;
   font-family: "Nohemi";
-  font-size: 124px;
+  font-size: 7.176vw;
   font-style: normal;
   font-weight: 500;
   line-height: 65%; /* 186px */
@@ -43,7 +43,6 @@ p {
 
   a {
     text-decoration: none;
-    border-radius: 20px;
   }
 
   img {
@@ -51,7 +50,8 @@ p {
     width: 100%;
     height: 66.293vh;
     object-fit: cover;
-    transition: all 1s;
+
+    border-radius: 20px;
   }
 
   img:hover {

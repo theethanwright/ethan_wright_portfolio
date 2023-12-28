@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 905px) {
 
     .navbar {
         box-sizing: border-box;
@@ -65,8 +65,6 @@
         grid-column: 1 / span 4;
         justify-self: start;
         align-self: end;
-
-        font-size: clamp(64px, 8vw, 124px)
       }
  
       .wrapper-project .project-info {
@@ -94,7 +92,7 @@
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 904px) {
     .navbar {
       box-sizing: border-box;
       position: relative;
@@ -143,8 +141,6 @@
       grid-column: 1 / span 6;
       justify-self: start;
       align-self: end;
-
-      font-size: clamp(64px, 12vw, 124px)
     }
 
     .wrapper-project .project-info {
@@ -156,13 +152,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
-      gap: 2vw;
-
       transition-delay: 75ms
-    }
-
-    .wrapper-project .project-info p {
-      font-size: clamp(9px, 1.9vw, 14px);
     }
 
     .wrapper-project a {
@@ -174,7 +164,7 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
     .navbar {
       box-sizing: border-box;
       position: relative;
@@ -223,8 +213,6 @@
       grid-column: 1 / span 6;
       justify-self: start;
       align-self: end;
-
-      font-size: clamp(64px, 14vw, 124px)
     }
 
     .wrapper-project .project-info {
@@ -238,10 +226,6 @@
       justify-content: start;
       align-items: flex-start;
       transition-delay: 75ms
-    }
-
-    .wrapper-project .project-info p {
-      font-size: clamp(9px, 3vw, 14px);
     }
 
     .wrapper-project a {
