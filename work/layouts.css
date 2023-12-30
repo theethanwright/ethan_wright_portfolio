@@ -1,55 +1,9 @@
 @media screen and (min-width: 1000px) {
-
-    .navbar {
-        box-sizing: border-box;
-        position: relative;
-        padding: 24px 30px;
-        display: grid;
-        margin: 0;
-        width: 100%;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 1.389vw;
+      
+    .spacer {
+      display: block;
+      height: 60px;
     }
-    
-    .logo {
-        grid-column-start: 1;
-        display: flex;
-        width: 34px;
-        height: 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 3.256px;
-        justify-self: start;
-        align-self: center;
-      }
-    
-      p:nth-child(2) {
-        grid-column: 2 / span 2;
-        justify-self: start;
-        align-self: center;
-      }
-    
-      p:nth-child(3) {
-        grid-column: 5 / span 2;
-        justify-self: start;
-        align-self: center;
-      }
-    
-      p:nth-child(4) {
-        grid-column: 8 / span 2;
-        justify-self: start;
-        align-self: center;
-      }
-    
-      p:nth-child(5) {
-        grid-column: 11 / span 2;
-        justify-self: start;
-        align-self: center;
-      }
-
-      .hamburger {
-        display: none;
-      }
 
       .wrapper-project {
         box-sizing: border-box;
@@ -61,12 +15,13 @@
         gap: 32px 1.389vw;
       }
 
-      .wrapper-project h1 {
+      .wrapper-project .display-lg {
         grid-column: 1 / span 4;
         justify-self: start;
         align-self: end;
 
-        font-size: clamp(64px, 8vw, 124px)
+        font-size: clamp(64px, 8vw, 124px);
+        line-height: 68%;
       }
  
       .wrapper-project .project-info {
@@ -80,7 +35,7 @@
         transition-delay: 75ms
       }
 
-      .wrapper-project .project-info p {
+      .wrapper-project .project-info .p-lg {
         font-size: clamp(9px, 0.81vw, 14px);
       }
 
@@ -89,45 +44,19 @@
         justify-self: stretch;
         align-self: start;
         overflow: hidden;
-        transition-delay: 150ms
+        transition-delay: 150ms;
+        border-radius: 20px;
+        height: 66.293vh;
       }
 
 }
 
 @media screen and (max-width: 1000px) {
-    .navbar {
-      box-sizing: border-box;
-      position: relative;
-      padding: 24px 30px;
-      display: grid;
-      margin: 0;
-      width: 100%;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 1.389vw;
-    }
 
-    .logo {
-        grid-column-start: 1;
-        display: flex;
-        width: 34px;
-        height: 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 3.256px;
-        justify-self: start;
-        align-self: center;
-      }
-
-    .navbar p {
-        display: none;
-    }
-
-    .icon {
-        display: grid;
-        grid-column-start: 8;
-        justify-self: end;
-        align-self: center;
-    }
+  .spacer {
+    display: block;
+    height: 60px;
+  }
 
     .wrapper-project {
       box-sizing: border-box;
@@ -139,12 +68,13 @@
       gap: 32px 1.389vw;
     }
 
-    .wrapper-project h1 {
+    .wrapper-project .display-lg {
       grid-column: 1 / span 6;
       justify-self: start;
       align-self: end;
 
-      font-size: clamp(64px, 12vw, 124px)
+      font-size: clamp(64px, 12vw, 124px);
+      line-height: 68%;
     }
 
     .wrapper-project .project-info {
@@ -161,7 +91,7 @@
       transition-delay: 75ms
     }
 
-    .wrapper-project .project-info p {
+    .wrapper-project .project-info .p-lg {
       font-size: clamp(9px, 1.9vw, 14px);
     }
 
@@ -170,44 +100,18 @@
       justify-self: stretch;
       align-self: start;
       overflow: hidden;
-      transition-delay: 150ms
+      transition-delay: 150ms;
+      border-radius: 20px;
+      height: 66.293vh;
     }
 }
 
 @media screen and (max-width: 750px) {
-    .navbar {
-      box-sizing: border-box;
-      position: relative;
-      padding: 24px 16px;
-      display: grid;
-      margin: 0;
-      width: 100%;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.389vw;
-    }
 
-    .logo {
-        grid-column-start: 1;
-        display: flex;
-        width: 34px;
-        height: 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 3.256px;
-        justify-self: start;
-        align-self: center;
-      }
-
-    .navbar p {
-        display: none;
-    }
-
-    .icon {
-        display: grid;
-        grid-column-start: 4;
-        justify-self: end;
-        align-self: center;
-    }
+  .spacer {
+    display: block;
+    height: 60px;
+  }
 
     .wrapper-project {
       box-sizing: border-box;
@@ -219,12 +123,13 @@
       gap: 32px 1.389vw;
     }
 
-    .wrapper-project h1 {
+    .wrapper-project .display-lg {
       grid-column: 1 / span 6;
       justify-self: start;
       align-self: end;
 
-      font-size: clamp(64px, 14vw, 124px)
+      font-size: clamp(64px, 14vw, 124px);
+      line-height: 68%;
     }
 
     .wrapper-project .project-info {
@@ -240,7 +145,7 @@
       transition-delay: 75ms
     }
 
-    .wrapper-project .project-info p {
+    .wrapper-project .project-info .p-lg {
       font-size: clamp(9px, 3vw, 14px);
     }
 
@@ -249,6 +154,8 @@
       justify-self: stretch;
       align-self: start;
       overflow: hidden;
-      transition-delay: 150ms
+      transition-delay: 150ms;
+      border-radius: 20px;
+      height: 66.293vh;
     }
 }

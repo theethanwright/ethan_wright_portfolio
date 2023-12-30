@@ -102,7 +102,7 @@ const renderCanvas = () => {
   ]);
 
 const imageBodies = [];
-const imageElements = document.querySelectorAll(".image");
+const imageElements = document.querySelectorAll(".pro-img");
 
 imageElements.forEach((imageElem) => {
     const randomLeft = Math.floor(Math.random() * window.innerWidth);
