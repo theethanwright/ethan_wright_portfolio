@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Nohemi";
+    src: url(work/public/fonts/Nohemi-Medium.woff2);
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
