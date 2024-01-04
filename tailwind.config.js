@@ -16,7 +16,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['"Nohemi"'],
-      'mono': ['"IBM Plex Mono"'],
+      'mono': ['IBM Plex Mono, monospace'],
     },
     fontSize: {
       bsm: ['11px', '16px'],
@@ -31,13 +31,16 @@ module.exports = {
       hsm: ['24px', '32px'],
       hmd: ['28px', '36px'],
       hlg: ['32px', '40px'],
-      dsm: ['64px', '65.28px'],
-      dmd: ['96px', '144px'],
-      dlg: ['124px', '147.56px'],
-      xl: ['24px', '32px'],
-      xxl: ['24px', '32px'],
+      dsm: ['64px', '64px'],
+      dmd: ['96px', '96px'],
+      dlg: ['124px', '124px'],
+      fsm: ['19vw', '18vw'],
+      fmd: ['15vw', '14vw'],
+      flg: ['16.5vw', '15vw'],
+      xxl: [''],
     },
     extend: {
+
     },
   },
   plugins: [],
