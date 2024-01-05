@@ -56,6 +56,7 @@ a img:hover {
   }
 
   .rounded-scroll {
-    border-top-left-radius: calc(1px * ((max(var(--scroll, 780) - 780, 0) * 24) / 100));
-    border-top-right-radius: calc(1px * ((max(var(--scroll, 900) - 900, 0) * 24) / 100));
+    border-top-left-radius: calc((max(var(--scroll) - var(--footerHeight)) * 240px / 100 + 0px));
+    border-top-right-radius: calc((max(var(--scroll) - var(--footerHeight)) * 240px / 100 + 0px));
   }
+  

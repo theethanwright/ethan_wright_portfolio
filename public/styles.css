@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Nohemi";
 
-  src: url(work/public/fonts/Nohemi-Medium.woff2);
+  src: url(public/fonts/Nohemi-Medium.woff2);
 }
 
 /*
@@ -648,9 +648,8 @@ video {
   grid-row-start: 1;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-14 {
@@ -661,12 +660,20 @@ video {
   margin-bottom: 6rem;
 }
 
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mt-10 {
@@ -689,14 +696,6 @@ video {
   margin-top: 1rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -717,32 +716,16 @@ video {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
 .h-full {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-svh {
   height: 100svh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .w-fit {
@@ -775,8 +758,8 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.grid-rows-\[fit-content_fit-content_auto\] {
-  grid-template-rows: fit-content fit-content auto;
+.grid-rows-\[min-content_min-content_auto\] {
+  grid-template-rows: min-content min-content auto;
 }
 
 .flex-row {
@@ -791,16 +774,16 @@ video {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
 
 .self-start {
   align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .self-baseline {
@@ -856,11 +839,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
@@ -879,14 +857,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.align-baseline {
-  vertical-align: baseline;
 }
 
 .font-mono {
@@ -957,6 +927,10 @@ video {
   --tw-text-opacity: 0.85;
 }
 
+.mix-blend-difference {
+  mix-blend-mode: difference;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -969,16 +943,12 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ease-out {
@@ -1030,24 +1000,16 @@ video {
     margin: 0px;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
 
   .md\:mb-8 {
     margin-bottom: 2rem;
-  }
-
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
-  .md\:mb-7 {
-    margin-bottom: 1.75rem;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
   }
 
   .md\:rotate-0 {
@@ -1081,10 +1043,6 @@ video {
     padding-top: 2.5rem;
   }
 
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
   .md\:text-right {
     text-align: right;
   }
@@ -1113,6 +1071,10 @@ video {
     grid-column: span 10 / span 10;
   }
 
+  .lg\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1121,8 +1083,8 @@ video {
     grid-column: span 5 / span 5;
   }
 
-  .lg\:col-span-12 {
-    grid-column: span 12 / span 12;
+  .lg\:col-start-1 {
+    grid-column-start: 1;
   }
 
   .lg\:col-start-12 {
@@ -1139,10 +1101,6 @@ video {
 
   .lg\:col-start-7 {
     grid-column-start: 7;
-  }
-
-  .lg\:col-start-1 {
-    grid-column-start: 1;
   }
 
   .lg\:col-start-8 {
@@ -1173,24 +1131,16 @@ video {
     height: 100%;
   }
 
-  .lg\:h-96 {
-    height: 24rem;
-  }
-
-  .lg\:h-svh {
-    height: 100svh;
-  }
-
-  .lg\:max-h-96 {
-    max-height: 24rem;
-  }
-
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .lg\:self-baseline {
-    align-self: baseline;
+  .lg\:grid-rows-\[min-content_auto\] {
+    grid-template-rows: min-content auto;
+  }
+
+  .lg\:self-end {
+    align-self: flex-end;
   }
 
   .lg\:justify-self-start {
@@ -1209,6 +1159,14 @@ video {
     padding-top: 6rem;
   }
 
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .lg\:pt-40 {
+    padding-top: 10rem;
+  }
+
   .lg\:pt-9 {
     padding-top: 2.25rem;
   }
@@ -1221,5 +1179,9 @@ video {
   .lg\:text-flg {
     font-size: 16.5vw;
     line-height: 15vw;
+  }
+
+  .lg\:leading-\[4\.75rem\] {
+    line-height: 4.75rem;
   }
 }
