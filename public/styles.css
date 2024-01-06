@@ -600,6 +600,10 @@ video {
   top: 2rem;
 }
 
+.z-auto {
+  z-index: auto;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -746,8 +750,16 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.list-inside {
-  list-style-position: inside;
+.snap-y {
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+}
+
+.snap-proximity {
+  --tw-scroll-snap-strictness: proximity;
+}
+
+.snap-start {
+  scroll-snap-align: start;
 }
 
 .list-outside {
@@ -772,6 +784,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-8 {
@@ -804,6 +820,18 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -899,6 +927,10 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .tracking-wide {
@@ -1139,6 +1171,10 @@ video {
     grid-template-rows: min-content auto;
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:self-end {
     align-self: flex-end;
   }
@@ -1149,6 +1185,10 @@ video {
 
   .lg\:justify-self-end {
     justify-self: end;
+  }
+
+  .lg\:overflow-x-scroll {
+    overflow-x: scroll;
   }
 
   .lg\:p-6 {
