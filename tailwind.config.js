@@ -11,8 +11,8 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'primary': '#101010',
-      'secondary': '#fff',
+      'black': '#101010',
+      'white': '#fff',
     },
     fontFamily: {
       'sans': ['"Nohemi"'],

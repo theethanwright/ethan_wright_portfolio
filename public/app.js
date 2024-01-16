@@ -10,15 +10,6 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.reveal');
 hiddenElements.forEach((el) => observer.observe(el));
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
 window.addEventListener("scroll", setScrollVar)
 window.addEventListener ("resize", setScrollVar)
 
@@ -45,3 +36,15 @@ function setScrollVar() {
 
 
 setScrollVar()
+
+function openNav() {
+  document.getElementById("menu").style.transform = "translateX(0%)";
+  document.getElementById("menu").style.zIndex = "1";
+  document.getElementById("navbar").style.zIndex = "2";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.transform = "translateX(100%)";
+  document.getElementById("menu").style.zIndex = "2";
+  document.getElementById("navbar").style.zIndex = "1";
+}

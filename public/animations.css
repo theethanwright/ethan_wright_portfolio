@@ -1,3 +1,6 @@
+:root {
+  color-scheme: light dark;
+}
 
 .und-ef {
     display: block;
@@ -8,7 +11,7 @@
 .und-ef::after {
     content: "";
     display: block;
-    background-color: #fff;
+    background-color: light-dark(#101010, #fff);
     width: 100%;
     transform: scaleX(0);
     height: 2px;
@@ -60,3 +63,17 @@ a img:hover {
     border-top-right-radius: calc((max(var(--scroll) - var(--footerHeight)) * 240px / 100 + 0px));
   }
   
+  .height {
+    height: calc(max(var(--viewportHeight) * 1px));
+  }
+
+  .menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transform-origin: top right;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }

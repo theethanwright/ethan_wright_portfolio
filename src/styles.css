@@ -11,10 +11,10 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary px-5 py-2 rounded-full text-secondary font-mono text-blg tracking-widest
+    @apply bg-black px-5 py-2 rounded-full text-white font-mono text-blg tracking-widest
   }
   .btn-secondary {
-    @apply bg-opacity-0 border-primary border-2 px-5 py-2 rounded-full text-primary font-mono text-blg tracking-widest
+    @apply bg-opacity-0 border-black border-2 px-5 py-2 rounded-full text-back font-mono text-blg tracking-widest
   }
   .grid-cols-scale {
     @apply w-full grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12

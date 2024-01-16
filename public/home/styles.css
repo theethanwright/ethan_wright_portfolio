@@ -1,13 +1,5 @@
-body {
-  display: block;
-  overflow: hidden;
-  background: #101010;
-  margin: 0%;
-  padding: 0%;
-}
-
-a {
-  text-decoration: none;
+:root {
+  color-scheme: light dark;
 }
 
 .word {
@@ -16,7 +8,8 @@ a {
   cursor: grab;
   user-select: none;
   font-family: "Nohemi";
-  color: #fff;
+  font-weight: 500;
+  color: light-dark(#101010, #fff);
   font-size: 7.176vw;
   margin-right: 10px;
   line-height: 7.176vw;
