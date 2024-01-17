@@ -553,7 +553,7 @@ video {
 .btn-primary {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(16 16 16 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.5rem;
@@ -564,6 +564,13 @@ video {
   letter-spacing: 0.1em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(16 16 16 / var(--tw-bg-opacity));
+  }
 }
 
 .grid-cols-scale {
@@ -905,6 +912,18 @@ video {
   border-right-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-x-black {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(16 16 16 / var(--tw-border-opacity));
+  border-right-color: rgb(16 16 16 / var(--tw-border-opacity));
+}
+
+.border-y-white {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(16 16 16 / var(--tw-bg-opacity));
@@ -921,6 +940,10 @@ video {
 
 .fill-white {
   fill: #fff;
+}
+
+.stroke-white {
+  stroke: #fff;
 }
 
 .object-cover {
@@ -1398,6 +1421,18 @@ video {
     border-right-color: rgb(16 16 16 / var(--tw-border-opacity));
   }
 
+  .dark\:border-x-white {
+    --tw-border-opacity: 1;
+    border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
+    border-right-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .dark\:border-y-black {
+    --tw-border-opacity: 1;
+    border-top-color: rgb(16 16 16 / var(--tw-border-opacity));
+    border-bottom-color: rgb(16 16 16 / var(--tw-border-opacity));
+  }
+
   .dark\:bg-black {
     --tw-bg-opacity: 1;
     background-color: rgb(16 16 16 / var(--tw-bg-opacity));
@@ -1414,6 +1449,10 @@ video {
 
   .dark\:fill-white {
     fill: #fff;
+  }
+
+  .dark\:stroke-black {
+    stroke: #101010;
   }
 
   .dark\:text-black {
