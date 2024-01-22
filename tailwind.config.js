@@ -36,7 +36,7 @@ module.exports = {
       dlg: ['124px', '124px'],
       fsm: ['19vw', '18vw'],
       fmd: ['15vw', '14vw'],
-      flg: ['clamp:(64px, 16.5vw, 268px)', 'clamp(65.28px, 15vw, 262.64px)'],
+      flg: ['clamp(64px, 16.5vw, 250px)', 'clamp(65.28px, 15vw, 250px)'],
       xxl: [''],
     },
     extend: {
