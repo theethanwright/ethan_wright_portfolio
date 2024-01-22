@@ -837,6 +837,10 @@ video {
   gap: 2rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -1069,6 +1073,10 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
 }
 
 .duration-500 {
@@ -1376,8 +1384,8 @@ video {
   }
 
   .lg\:text-flg {
-    font-size: 16.5vw;
-    line-height: 15vw;
+    font-size: clamp:(64px, 16.5vw, 268px);
+    line-height: clamp(65.28px, 15vw, 262.64px);
   }
 
   .lg\:text-llg {
@@ -1431,5 +1439,9 @@ video {
 
   .dark\:text-opacity-50 {
     --tw-text-opacity: 0.5;
+  }
+
+  .dark\:text-opacity-85 {
+    --tw-text-opacity: 0.85;
   }
 }
