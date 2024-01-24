@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Nohemi";
 
-  src: url(public/fonts/Nohemi-Medium.woff2);
+  src: url(fonts/Nohemi-Medium.woff2);
 }
 
 /*
@@ -821,10 +821,6 @@ video {
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1047,12 +1043,12 @@ video {
   --tw-text-opacity: 0.5;
 }
 
-.text-opacity-85 {
-  --tw-text-opacity: 0.85;
-}
-
 .text-opacity-75 {
   --tw-text-opacity: 0.75;
+}
+
+.text-opacity-85 {
+  --tw-text-opacity: 0.85;
 }
 
 .opacity-50 {
@@ -1427,10 +1423,6 @@ video {
     stroke: #101010;
   }
 
-  .dark\:font-light {
-    font-weight: 300;
-  }
-
   .dark\:text-black {
     --tw-text-opacity: 1;
     color: rgb(16 16 16 / var(--tw-text-opacity));
@@ -1445,11 +1437,11 @@ video {
     --tw-text-opacity: 0.5;
   }
 
-  .dark\:text-opacity-85 {
-    --tw-text-opacity: 0.85;
-  }
-
   .dark\:text-opacity-75 {
     --tw-text-opacity: 0.75;
+  }
+
+  .dark\:text-opacity-85 {
+    --tw-text-opacity: 0.85;
   }
 }
