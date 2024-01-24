@@ -14,11 +14,11 @@
 
 .pro-img {
   position: absolute;
-  width: 200px;
+  width: clamp(50px, 10.499vw, 200px);
   height: auto;
   cursor: pointer;
 
-  border-radius: 10px;
+  border-radius: clamp(1px, 0.525vw, 10px);
 }
 
 .intro {

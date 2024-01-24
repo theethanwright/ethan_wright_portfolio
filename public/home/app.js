@@ -59,7 +59,6 @@ const renderCanvas = () => {
     }
   });
 
-  // walls and other configurations remain the same...
   Composite.add(engine.world, [
       // walls
       Bodies.rectangle(
