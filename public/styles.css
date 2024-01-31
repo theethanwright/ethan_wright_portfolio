@@ -643,6 +643,10 @@ video {
   grid-column-start: 2;
 }
 
+.col-start-3 {
+  grid-column-start: 3;
+}
+
 .col-start-4 {
   grid-column-start: 4;
 }
@@ -653,6 +657,10 @@ video {
 
 .col-start-8 {
   grid-column-start: 8;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
 }
 
 .row-start-1 {
@@ -713,10 +721,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .box-border {
@@ -1100,10 +1104,6 @@ video {
     grid-column: span 2 / span 2;
   }
 
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
-
   .md\:col-span-6 {
     grid-column: span 6 / span 6;
   }
@@ -1122,6 +1122,10 @@ video {
 
   .md\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .md\:col-start-5 {
+    grid-column-start: 5;
   }
 
   .md\:col-start-8 {
@@ -1152,21 +1156,17 @@ video {
     margin-bottom: 2rem;
   }
 
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:mt-28 {
     margin-top: 7rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:rotate-0 {
     --tw-rotate: 0deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1175,6 +1175,10 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:self-start {
+    align-self: flex-start;
   }
 
   .md\:justify-self-center {
@@ -1193,6 +1197,10 @@ video {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:text-right {
@@ -1258,8 +1266,20 @@ video {
     grid-column: span 5 / span 5;
   }
 
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:col-start-1 {
     grid-column-start: 1;
+  }
+
+  .lg\:col-start-10 {
+    grid-column-start: 10;
+  }
+
+  .lg\:col-start-11 {
+    grid-column-start: 11;
   }
 
   .lg\:col-start-12 {
@@ -1274,6 +1294,10 @@ video {
     grid-column-start: 4;
   }
 
+  .lg\:col-start-6 {
+    grid-column-start: 6;
+  }
+
   .lg\:col-start-7 {
     grid-column-start: 7;
   }
@@ -1282,8 +1306,16 @@ video {
     grid-column-start: 8;
   }
 
+  .lg\:col-start-9 {
+    grid-column-start: 9;
+  }
+
   .lg\:col-end-12 {
     grid-column-end: 12;
+  }
+
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
   }
 
   .lg\:mt-0 {

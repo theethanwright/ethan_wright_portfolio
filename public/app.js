@@ -48,7 +48,3 @@ function closeNav() {
   document.getElementById("menu").style.zIndex = "1";
   document.getElementById("navbar").style.zIndex = "2";
 }
-
-function tapNav() {
-
-}
