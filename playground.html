@@ -3,24 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
-    <script defer src="public/home/app.js"></script>
     <script defer src="public/app.js"></script>
-    <link rel="stylesheet" href="public/home/styles.css">
     <link rel="stylesheet" href="public/animations.css">
     <link rel="stylesheet" href="public/styles.css">
     <link rel="icon" type="image/x-icon" href="public/favicon.png">
-    <meta property="og:image" content="public/share_img.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-    <title>Home</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>WIP</title>
 </head>
-<body class="bg-white dark:bg-black overflow-hidden">
-    <div class="text">CURIOSITY LEADING TO CREATIONS THAT FOSTER CARE</div>
-    <a href="project-offhand.html" draggable="false"><img src="public/home/public/images/1.jpg" alt="" class="pro-img" draggable="false"></a>
-    <a href="project-engram.html" draggable="false"><img src="public/home/public/images/2.jpg" alt="" class="pro-img" draggable="false"></a>
-    <a href="project-echo.html" draggable="false"><img src="public/home/public/images/3.jpg" alt="" class="pro-img" draggable="false"></a>
+<body class="bg-white dark:bg-black box-border">
     <!--NavBar-->
     <div class="absolute z-4 grid-cols-scale px-3 py-4 md:px-8 md:py-8 w-full" id="navbar">
         <a href="index.html" class="col-span-1 mb-1 self-center"><div class="logo">
@@ -80,7 +70,18 @@
                 <div class="text-white dark:text-black font-mono text-bsm md:text-blg"><a href="https://www.linkedin.com/in/ethan-wright-76751321a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
             </div>
         </div>
-    <div class="intro text-blg tracking-wide text-black dark:text-white text-opacity-85 font-mono mix-blend-difference">Hey! My name is Ethan Wright and I’m a designer and creative.</div>
-    <div class="fun-fact text-blg tracking-wide text-black dark:text-white text-opacity-85 font-mono mix-blend-difference hidden md:block">Designed and built <br>by me.</div>
+    <div class="w-full h-dvh flex flex-col items-center justify-center">
+        <lottie-player
+        autoplay
+        loop
+        mode="normal"
+        src="public/under-construction/public/Under Construction.json"
+        style="width: 320px; height: 320px;"
+        class="ml-1"
+        >
+        </lottie-player>
+        <div class="text-hsm text-black dark:text-white font-medium">Under Construction</div>
+        <div class="text-blg text-black dark:text-white font-mono mt-2">Is it really ever finished?</div>
+    </div>
 </body>
 </html>

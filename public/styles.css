@@ -723,6 +723,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -766,6 +770,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .grow {
@@ -823,6 +835,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .gap-3 {
@@ -967,6 +983,10 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-mono {
