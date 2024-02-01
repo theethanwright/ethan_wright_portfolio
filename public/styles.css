@@ -1043,6 +1043,10 @@ video {
   padding-top: 2.25rem;
 }
 
+.pt-56 {
+  padding-top: 14rem;
+}
+
 .font-mono {
   font-family: IBM Plex Mono, monospace;
 }
@@ -1586,6 +1590,14 @@ video {
 
   .lg\:pt-9 {
     padding-top: 2.25rem;
+  }
+
+  .lg\:pt-96 {
+    padding-top: 24rem;
+  }
+
+  .lg\:pt-52 {
+    padding-top: 13rem;
   }
 
   .lg\:text-left {
