@@ -784,6 +784,10 @@ video {
   width: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -1506,6 +1510,26 @@ video {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
+  .lg\:w-56 {
+    width: 14rem;
+  }
+
+  .lg\:w-48 {
+    width: 12rem;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
+  }
+
+  .lg\:w-44 {
+    width: 11rem;
   }
 
   .lg\:grid-cols-5 {
