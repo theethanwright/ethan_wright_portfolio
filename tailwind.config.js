@@ -40,7 +40,9 @@ module.exports = {
       xxl: [''],
     },
     extend: {
-
+      gridRow: {
+        'span-14': 'span 14 / span 14',
+      }
     },
   },
   plugins: [],
