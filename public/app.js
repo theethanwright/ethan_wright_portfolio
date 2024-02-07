@@ -48,3 +48,11 @@ function closeNav() {
   document.getElementById("menu").style.zIndex = "1";
   document.getElementById("navbar").style.zIndex = "2";
 }
+
+element.addEventListener("press", myFunction);
+
+function myFunction() {
+  document.getElementById("menu").style.transform = "translateX(0%)";
+  document.getElementById("menu").style.zIndex = "2";
+  document.getElementById("navbar").style.zIndex = "1";
+}

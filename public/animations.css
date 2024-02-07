@@ -24,10 +24,6 @@
     transform-origin: bottom right;
   }
 
-a img:hover {
-    transform: scale(1.15, 1.15);
-}
-
 .reveal {
     opacity: 0;
     filter: blur(5px);
