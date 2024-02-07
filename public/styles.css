@@ -935,6 +935,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-t-\[20px\] {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -1052,6 +1056,10 @@ video {
   padding-top: 2.25rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .font-mono {
   font-family: IBM Plex Mono, monospace;
 }
@@ -1150,20 +1158,8 @@ video {
   opacity: 0.5;
 }
 
-.mix-blend-multiply {
-  mix-blend-mode: multiply;
-}
-
-.mix-blend-overlay {
-  mix-blend-mode: overlay;
-}
-
 .mix-blend-difference {
   mix-blend-mode: difference;
-}
-
-.mix-blend-luminosity {
-  mix-blend-mode: luminosity;
 }
 
 .mix-blend-plus-lighter {
