@@ -1,11 +1,15 @@
-var images = document.getElementsByClassName('pg-img-cover');
-images = [].slice.call(images);
+var dots = document.querySelectorAll(".pg-img-cover");
+console.log(dots)
 
-console.log(images);
-
-images.forEach(function(item){
-
-item.onclick = function GFG_Fun() {
-    console.log(e.currentTarget.id, ' was clicked')
-    }
+for(var i = 0; i < dots.length; i ++){
+dots[i].dotIndex = i;
+dots[i].addEventListener("click", function(){
+    console.log(this.dotIndex);
+    var a = this.dotIndex;
+    document.getElementById(a).style.display = "block"
 })
+};
+
+function closeCard(a) {
+    document.getElementById(a).style.display = "none";
+}

@@ -49,10 +49,45 @@ function closeNav() {
   document.getElementById("navbar").style.zIndex = "2";
 }
 
-element.addEventListener("press", myFunction);
-
 function myFunction() {
   document.getElementById("menu").style.transform = "translateX(0%)";
   document.getElementById("menu").style.zIndex = "2";
   document.getElementById("navbar").style.zIndex = "1";
+}
+
+var dots = document.querySelectorAll(".preview_img_link");
+
+for(var i = 0; i < dots.length; i ++){
+dots[i].dotIndex = i;
+dots[i].addEventListener("click", function(){
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+
+  const elementWidth = document.getElementById(0).offsetWidth;
+  const elementHeight = document.getElementById(0).offsetHeight;
+  
+  const scaleX = viewportWidth / elementWidth;
+  const scaleY = viewportHeight / elementHeight;
+
+  const scale = Math.min(scaleX, scaleY);
+
+  console.log(scaleY);
+  console.log(elementHeight);
+  console.log(scaleY);
+  console.log(this.dotIndex);
+  var a = this.dotIndex;
+  document.getElementById(a).classList.remove("overflow-hidden")
+  document.getElementById(a).style.transform = `scale(${scale}) translateY(-27%)`;
+  var imgElements = document.getElementsByTagName('img');
+
+// Loop through each img element
+for (var i = 0; i < imgElements.length; i++) {
+    // Remove the class from each img element
+    imgElements[i].classList.remove("hover:scale-125");
+}
+})
+}
+
+function delay (URL) {
+  setTimeout( function() { window.location = URL }, 500 );
 }
