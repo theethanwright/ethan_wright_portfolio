@@ -1,6 +1,6 @@
 const canvasSize = {
     width: window.innerWidth,
-    height: window.innerHeight
+    height: window.innerHeight,
   };
 
   const lineHeight = (window.innerWidth * 8.5) / 100;
@@ -47,7 +47,11 @@ const renderCanvas = () => {
     }
   };
 
-  const engine = Engine.create({});
+  const engine = Engine.create({
+    options: {
+      
+    }
+  });
 
   const render = Render.create({
     element: document.body,
@@ -55,7 +59,7 @@ const renderCanvas = () => {
     options: {
       ...canvasSize,
       background: "transparent",
-      wireframes: false,
+      wireframes: true,
     }
   });
 
@@ -251,6 +255,7 @@ imageBodies.forEach(({ iBody, imageElem }) => {
 Matter.Engine.update(engine);
 requestAnimationFrame(rerender);
 })();
+
 
 };
 
