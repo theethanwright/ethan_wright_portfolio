@@ -59,7 +59,7 @@ const renderCanvas = () => {
     options: {
       ...canvasSize,
       background: "transparent",
-      wireframes: true,
+      wireframes: false,
     }
   });
 
