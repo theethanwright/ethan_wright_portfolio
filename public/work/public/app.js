@@ -6,22 +6,21 @@ dots[i].addEventListener("click", function(){
   console.log(this.dotIndex)
   var a = this.dotIndex;
   console.log(this.dotIndex);
-  document.getElementById(a).classList.remove("overflow-hidden");
-  document.getElementById(a).style.position = "rleative";
-  document.getElementById(a).style.width = `100vw`;
-  document.getElementById(a).style.height = `100vh`;
-  document.getElementById(a).style.top = `-10%`;
-  document.getElementById(a).style.left = `-10%`;
-  var imgElements = document.getElementsByTagName('img');
-
-// Loop through each img element
-for (var i = 0; i < imgElements.length; i++) {
-    // Remove the class from each img element
-    imgElements[i].classList.remove("hover:scale-125", "transition-transform", "duration-500");
-}
+  const copied = document.getElementById(a)
+  const nodeHeight = copied.offsetHeight;
+  const nodeWidth = copied.offsetWidth;
+  const nodeTop = copied.getBoundingClientRect().top;
+  const nodeLeft = copied.getBoundingClientRect().left;
+  var clonedNode = copied.cloneNode(true);
+  clonedNode.id = "node_clone";
+  document.body.appendChild(clonedNode);
+  clonedNode.style.setProperty('--width', nodeWidth);
+  clonedNode.style.setProperty('--height', nodeHeight);
+  clonedNode.style.setProperty('--top', nodeTop);
+  clonedNode.style.setProperty('--left', nodeLeft);
 })
 }
 
 function delay (URL) {
-  setTimeout( function() { window.location = URL }, 600 );
+  setTimeout( function() { window.location = URL }, 500 );
 }
