@@ -7,13 +7,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-var hamburger = document.getElementById('hamburger');
-var closeButton = document.getElementById('closeButton');
-var work = document.getElementById('work');
-var about = document.getElementById('about');
-var resources = document.getElementById('resources');
-var playground = document.getElementById('playground');
-
 const hiddenElements = document.querySelectorAll('.reveal');
 hiddenElements.forEach((el) => observer.observe(el));
 
