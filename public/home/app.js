@@ -1,3 +1,10 @@
+var hamburger = document.getElementById('hamburger');
+var closeButton = document.getElementById('closeButton');
+var work = document.getElementById('work');
+var about = document.getElementById('about');
+var resources = document.getElementById('resources');
+var playground = document.getElementById('playground');
+
 hamburger.addEventListener('touchend', function() {
   document.getElementById("menu").style.transform = "translateX(0%)";
   document.getElementById("menu").style.zIndex = "2";
