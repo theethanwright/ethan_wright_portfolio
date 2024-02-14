@@ -1,3 +1,31 @@
+hamburger.addEventListener('touchend', function() {
+  document.getElementById("menu").style.transform = "translateX(0%)";
+  document.getElementById("menu").style.zIndex = "2";
+  document.getElementById("navbar").style.zIndex = "1";
+});
+
+closeButton.addEventListener('touchend', function() {
+  document.getElementById("menu").style.transform = "translateX(100%)";
+  document.getElementById("menu").style.zIndex = "1";
+  document.getElementById("navbar").style.zIndex = "2";
+});
+
+work.addEventListener('touchend', function() {
+    window.location.href = 'work.html';
+});
+
+about.addEventListener('touchend', function() {
+  window.location.href = 'about.html';
+});
+
+resources.addEventListener('touchend', function() {
+  window.location.href = 'resources.html';
+});
+
+playground.addEventListener('touchend', function() {
+  window.location.href = 'playground.html';
+});
+
 const canvasSize = {
     width: window.innerWidth,
     height: window.innerHeight,

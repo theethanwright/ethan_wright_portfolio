@@ -5,7 +5,8 @@
     left: calc(max(var(--left) * 1px));
     width: calc(max(var(--width) * 1px));
     height: calc(max(var(--height) * 1px));
-    animation: expand 500ms ease-out forwards;
+    animation: expand 700ms forwards;
+    animation-timing-function: ease;
 }
 
 @keyframes expand {
