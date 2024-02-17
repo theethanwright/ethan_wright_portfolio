@@ -1168,6 +1168,10 @@ video {
   letter-spacing: 0.05em;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(16 16 16 / var(--tw-text-opacity));
@@ -1517,6 +1521,10 @@ video {
     grid-column-start: 8;
   }
 
+  .lg\:col-start-11 {
+    grid-column-start: 11;
+  }
+
   .lg\:col-end-12 {
     grid-column-end: 12;
   }
@@ -1655,6 +1663,10 @@ video {
 
   .lg\:leading-\[4\.75rem\] {
     line-height: 4.75rem;
+  }
+
+  .lg\:tracking-wide {
+    letter-spacing: 0.025em;
   }
 }
 
