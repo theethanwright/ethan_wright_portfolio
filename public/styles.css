@@ -635,6 +635,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -657,6 +661,14 @@ video {
 
 .z-\[2\] {
   z-index: 2;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .col-span-1 {
