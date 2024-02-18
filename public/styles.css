@@ -627,6 +627,10 @@ video {
   position: static;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1196,6 +1200,14 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.mix-blend-exclusion {
+  mix-blend-mode: exclusion;
 }
 
 .transition-all {
