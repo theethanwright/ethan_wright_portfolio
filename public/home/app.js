@@ -3,7 +3,11 @@ var closeButton = document.getElementById('closeButton');
 var work = document.getElementById('work');
 var about = document.getElementById('about');
 var resources = document.getElementById('resources');
-var playground = document.getElementById('playground');
+var arena = document.getElementById('arena');
+var behance = document.getElementById('behance');
+var dribble = document.getElementById('dribble');
+var instagram = document.getElementById('instagram');
+var linkedIn = document.getElementById('linkedIn');
 
 hamburger.addEventListener('touchend', function() {
   document.getElementById("menu").style.transform = "translateX(0%)";
@@ -31,6 +35,22 @@ resources.addEventListener('touchend', function() {
 
 playground.addEventListener('touchend', function() {
   window.location.href = 'playground.html';
+});
+
+arena.addEventListener('touchend', function() {
+  window.location.href = 'https://www.are.na/ethan-wright';
+});
+
+behance.addEventListener('touchend', function() {
+  window.location.href = 'https://www.behance.net/theethanwright';
+});
+
+dribble.addEventListener('touchend', function() {
+  window.location.href = 'https://www.instagram.com/theethanwright/';
+});
+
+linkedIn.addEventListener('touchend', function() {
+  window.location.href = 'https://www.linkedin.com/in/ethan-wright-76751321a/';
 });
 
 const canvasSize = {
