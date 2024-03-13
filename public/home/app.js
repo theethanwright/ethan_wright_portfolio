@@ -8,9 +8,9 @@ var behance = document.getElementById('behance');
 var dribble = document.getElementById('dribble');
 var instagram = document.getElementById('instagram');
 var linkedIn = document.getElementById('linkedIn');
-var project1 = document.getElementById('linkedIn');
-var project2 = document.getElementById('linkedIn');
-var project3 = document.getElementById('linkedIn');
+var project1 = document.getElementById('project1');
+var project2 = document.getElementById('project2');
+var project3 = document.getElementById('project3');
 
 hamburger.addEventListener('touchend', function() {
   document.getElementById("menu").style.transform = "translateX(0%)";
