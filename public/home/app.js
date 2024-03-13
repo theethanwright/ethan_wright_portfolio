@@ -8,6 +8,9 @@ var behance = document.getElementById('behance');
 var dribble = document.getElementById('dribble');
 var instagram = document.getElementById('instagram');
 var linkedIn = document.getElementById('linkedIn');
+var project1 = document.getElementById('linkedIn');
+var project2 = document.getElementById('linkedIn');
+var project3 = document.getElementById('linkedIn');
 
 hamburger.addEventListener('touchend', function() {
   document.getElementById("menu").style.transform = "translateX(0%)";
@@ -22,19 +25,19 @@ closeButton.addEventListener('touchend', function() {
 });
 
 work.addEventListener('touchend', function() {
-    window.location.href = 'work.html';
+    window.location.href = 'work';
 });
 
 about.addEventListener('touchend', function() {
-  window.location.href = 'about.html';
+  window.location.href = 'about';
 });
 
 resources.addEventListener('touchend', function() {
-  window.location.href = 'resources.html';
+  window.location.href = 'resources';
 });
 
 playground.addEventListener('touchend', function() {
-  window.location.href = 'playground.html';
+  window.location.href = 'playground';
 });
 
 arena.addEventListener('touchend', function() {
@@ -51,6 +54,18 @@ dribble.addEventListener('touchend', function() {
 
 linkedIn.addEventListener('touchend', function() {
   window.location.href = 'https://www.linkedin.com/in/ethan-wright-76751321a/';
+});
+
+project1.addEventListener('touchend', function() {
+  window.location.href = 'project-play';
+});
+
+project2.addEventListener('touchend', function() {
+  window.location.href = 'project-echo';
+});
+
+project3.addEventListener('touchend', function() {
+  window.location.href = 'project-offhand';
 });
 
 const canvasSize = {
